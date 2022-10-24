@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+main {
+  margin: 10px auto;
+  max-width: 35vw;
+  background-color: white;
+  padding: 0 22px 40px 24px;
+}
+main .main {
+  border-radius: 4px;
+  text-align: center;
+  border: 1pt solid #bbb9b9;
+}
+main .main #result {
+  background-color: hsla(0deg, 0%, 0%, 0.8);
+  padding: 16px;
+  text-align: end;
+  font-size: 48px;
+  color: white;
+}
+main .main .buttons {
+  padding: 24px;
+}
+main .main .buttons .box {
+  background-color: #e7e5e5;
+  border: 1pt solid #bbb9b9;
+  padding: 12px;
+  font-size: 30px;
+  border-radius: 4px;
+  width: 82px;
+}
+main .main .buttons .box:hover {
+  cursor: pointer;
+  background-color: #bbb9b9;
+  border: 1pt dotted #646060;
+}
+main .main .buttons .box.button {
+  background-color: #f0595f;
+}
+main .main .buttons .box i {
+  color: #337cac;
+}
+main .main .buttons .box#submit {
+  height: 70%;
+  background-color: #2e86c0;
+}
+main .main .buttons .operators {
+  display: flex;
+  justify-content: space-between;
+}
+main .main .buttons .calc {
+  display: flex;
+  justify-content: space-between;
+}
+main .main .buttons .calc .numbers {
+  display: grid;
+  width: 100px;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 18px;
+}
+main .main .buttons .calc .sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .main .buttons .calc .sub .box {
+  height: 72px;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */
