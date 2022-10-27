@@ -8,16 +8,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <a class="movie"></a>
-      <a class="movie"></a>
-      <a class="movie"></a>
-      <a class="movie"></a>
-      <a class="movie"></a>
-      <a class="movie"></a>
-      <a class="movie"></a>
-      <a class="movie"></a>
-    </main>
+    <nav>
+      <div class="brand">Filma</div>
+      <div class="nav">
+        <p id="filter">
+          Search by year
+          <img src="./icons/dropdown.svg" height="16px" alt="dropdown" />
+        </p>
+        <p>
+          <input
+            type="text"
+            placeholder="Search Name Of Movie"
+            name="input"
+            id="input"
+          />
+        </p>
+      </div>
+    </nav>
+    <main id="main"></main>
   </body>
   <script src="./index.js"></script>
 </html>

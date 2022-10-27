@@ -10,36 +10,67 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
+body nav {
+  display: flex;
+  padding: 24px 48px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #1a1a40;
+  color: hsla(0deg, 0%, 100%, 0.8);
+  font-weight: 700;
+  align-items: center;
+}
+body nav .nav {
+  align-items: center;
+  display: flex;
+}
+body nav .nav input {
+  color: hsla(0deg, 0%, 100%, 0.8);
+  background: url("./icons/search.svg") no-repeat scroll 7px 7px;
+  padding: 16px 4px 16px 10px;
+  height: 24px;
+  border-radius: 18px;
+  border: 1px solid gray;
+  width: 100%;
+  outline: none;
+  padding-left: 28px;
+  font-size: 18px;
+}
+body nav .nav p:first-child {
+  cursor: pointer;
+  padding-right: 24px;
+}
 body main {
   display: grid;
-  margin: 70px auto;
-  max-width: 85%;
-  gap: 24px 8px;
+  margin: 100px auto;
+  max-width: 100%;
+  gap: 24px 1px;
+  padding-left: 72px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-body main img {
-  width: 300px;
+body main a {
+  text-decoration: none;
+  max-width: 88%;
   transition: all 0.2s ease-in-out;
-  border-radius: 4px;
 }
-body main img:hover {
+body main a img {
+  width: 200px;
+  border-radius: 8px;
+}
+body main a:hover {
   transform: scale(1.05);
 }
-body main .movie {
+body main a .text {
   color: white;
-  text-decoration: none;
 }
-body main .movie .text {
-  max-width: 88%;
-  margin: 0 auto;
-}
-body main .movie .text h3 {
+body main a .text h3 {
   font-size: 20px;
   font-weight: 700;
   line-height: 1/3;
-  padding: 8px 0 3px 0;
 }
-body main .movie .text p {
+body main a .text p {
   font-size: 16px;
   font-weight: 400;
   color: hsla(0deg, 0%, 100%, 0.8);
@@ -51,8 +82,7 @@ body #single {
   justify-content: space-between;
 }
 body #single img {
-  width: 500px;
-  max-height: 310px;
+  width: 400px;
   margin-right: 72px;
 }
 body #single .text {
@@ -75,4 +105,15 @@ body #single .text p {
 }
 body #single .text p:last-child {
   margin-top: 30px;
+}
+body #single .text button {
+  margin-top: 12px;
+  padding: 16px;
+  background-color: rgb(57, 57, 231);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */
